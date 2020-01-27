@@ -1,0 +1,35 @@
+name: flutter_reactive_form_mobx
+description: A new Flutter project.
+
+environment:
+  sdk: ">=2.1.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^0.1.2
+  flutter_mobx: ^0.3.6+1
+  mobx: ^0.4.0+3
+  email_validator: ^1.0.4
+  date_format: ^1.0.8
+
+dev_dependencies:
+  mobx_codegen: ^0.3.10
+  build_runner: ^1.7.2
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+
+  assets:
+  - assets/baby.png
+  - assets/young.png
+  - assets/kid.png
+  - assets/adult.png
+  - assets/oldman.png
+  
+scripts:
+  build: flutter pub run build_runner build
+  clean: flutter pub run build_runner clean
